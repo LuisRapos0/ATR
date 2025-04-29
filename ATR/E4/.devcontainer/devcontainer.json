@@ -1,0 +1,15 @@
+{
+    "name": "C++ Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/cpp:latest",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cmake"
+            ]
+        }
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+}
